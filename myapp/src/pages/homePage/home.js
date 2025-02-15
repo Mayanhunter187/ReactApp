@@ -1,17 +1,17 @@
-import logo from './logo.svg';
-import aidenmeme from './aidenmeme.svg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
+import kianPFP from './kianPFP.jpg';
+
+
 
 function home() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-        <img src={aidenmeme} alt="ew yuh" />
-          click <Link to="/login">here</Link> for more funny memes.
-        </p>
+      <header className="home-header">
+      <h1>Welcome to the GigaFolio</h1>
+      <img src={kianPFP} alt='kian pfp' className='limitedSizeImage'/>
+      <p>kians page</p>
       </header>
     </div>
   );
