@@ -24,13 +24,14 @@
 
 .limitedSizeImage {
   width: 500px;
-  height: auto; /* Keep aspect ratio intact */
+  height: 500px;
 }
 
 .column {
   float: left;
-  width: 33.33%;
-  padding: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  text-align:center;
 }
 
 .row::after {

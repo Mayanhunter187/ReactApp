@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
 import kianPFP from './kianPFP.jpg';
+import aidenPFP from './AidenPFP.jpg';
 
 
 
@@ -15,7 +16,7 @@ function home() {
           <img src={kianPFP} alt='kian pfp' className='limitedSizeImage'/>
         </div>
         <div class="column">
-          <img src={kianPFP} alt='kian pfp' className='limitedSizeImage'/>
+          <img src={aidenPFP} alt='aiden pfp' className='limitedSizeImage'/>
         </div>
       </div>
 
