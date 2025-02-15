@@ -26,3 +26,15 @@
   width: 500px;
   height: auto; /* Keep aspect ratio intact */
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 100px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -7,13 +7,28 @@ import kianPFP from './kianPFP.jpg';
 
 function home() {
   return (
-    <div className="App">
       <header className="home-header">
       <h1>Welcome to the GigaFolio</h1>
-      <img src={kianPFP} alt='kian pfp' className='limitedSizeImage'/>
-      <p>kians page</p>
+
+      <div class="row">
+        <div class="column">
+          <img src={kianPFP} alt='kian pfp' className='limitedSizeImage'/>
+        </div>
+        <div class="column">
+          <img src={kianPFP} alt='kian pfp' className='limitedSizeImage'/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h2> Kians Porftolio</h2>
+        </div>
+        <div class="column">
+        <h2> Aidens Porftolio</h2>
+        </div>
+      </div>
+      
       </header>
-    </div>
   );
 }
 
