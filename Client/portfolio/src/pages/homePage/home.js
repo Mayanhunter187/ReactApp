@@ -22,10 +22,10 @@ function home() {
 
       <div class="row">
         <div class="column">
-          <h2><Link to = "kianHome"> Kians Portfolio</Link></h2>
+          <h2><Link to = "kianHome"> <button className="standardButton">Kians Portfolio</button></Link></h2>
         </div>
         <div class="column">
-        <h2><Link to = "aidenHome"> Aidens Portfolio</Link></h2>
+        <h2><Link to = "aidenHome"> <button className="standardButton">Aidens Portfolio</button></Link></h2>
         </div>
       </div>
 
