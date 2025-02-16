@@ -9,13 +9,9 @@ services:
     develop:
       watch:
         - action: sync
-          path: .\Client\portfolio
+          path: Client\portfolio
           target: /app
           ignore:
             - Client/portfolio/node_modules
         - action: rebuild
-          path: Client/portfolio/node_modules/package.json
-
-
-
-
+          path: Client/portfolio/package.json
