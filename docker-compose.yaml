@@ -1,6 +1,7 @@
+version: "3"
 services:
   app:
-    build: Client\portfolio
+    build: Client/portfolio
     container_name: front_end
     command: npm start
     ports:
@@ -11,6 +12,10 @@ services:
           path: .\Client\portfolio
           target: /app
           ignore:
-            - Client\portfolio\node_modules
+            - Client/portfolio/node_modules
         - action: rebuild
-          path: Client\portfolio\package.json
+          path: Client/portfolio/node_modules/package.json
+
+
+
+
