@@ -1,7 +1,6 @@
 
 import { Link } from 'react-router-dom';
 import './kianHome.css';
-import home from '../../homePage/home';
 
 
 

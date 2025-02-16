@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/homePage/home';
 import KianHome from './pages/kianPages/kianHomePage/kianHome';
 import AidenHome from './pages/aidenPages/aidenHomePage/aidenHome';
+import './global.css';
+
 
 const App = () => {
   return (

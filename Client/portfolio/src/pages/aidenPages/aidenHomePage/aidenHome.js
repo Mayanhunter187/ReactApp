@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import './aidenHome.css';
-import home from '../../homePage/home';
+
 
 
 
