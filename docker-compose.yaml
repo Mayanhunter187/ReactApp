@@ -1,0 +1,16 @@
+services:
+  app:
+    build: Client\portfolio
+    container_name: front_end
+    command: npm start
+    ports:
+      - 80:3000
+    develop:
+      watch:
+        - action: sync
+          path: .\Client\portfolio
+          target: /app
+          ignore:
+            - Client\portfolio\node_modules
+        - action: rebuild
+          path: Client\portfolio\package.json
