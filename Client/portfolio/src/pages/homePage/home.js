@@ -22,13 +22,13 @@ function home() {
 
       <div class="row">
         <div class="column">
-          <h2> Kians Porftolio</h2>
+          <h2><Link to = "kianHome"> Kians Porftolio</Link></h2>
         </div>
         <div class="column">
-        <h2> Aidens Porftolio</h2>
+        <h2><Link to = "aidenHome"> Aidens Porftolio</Link></h2>
         </div>
       </div>
-      
+
       </header>
   );
 }
