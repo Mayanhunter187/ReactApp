@@ -21,7 +21,7 @@ jobs:
         - name: Build and Publish
           run: |
             cd Client/portfolio
-            docker build /Client/portfolio/Dockerfile --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+            docker build . --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
             docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
     deploy:
