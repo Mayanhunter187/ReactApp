@@ -1,6 +1,6 @@
 services:
   app:
-    build: Client/portfolio
+    image: ghcr.io/mayanhunter187/reactapp:latest
     container_name: front_end
     command: npm start
     ports:
