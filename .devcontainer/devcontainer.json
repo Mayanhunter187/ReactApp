@@ -1,0 +1,12 @@
+{
+	"name": "devcontainer",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "front_end",
+	"workspaceFolder": "/app"
+	"customizations": {
+		"vscode": {
+		  "settings": {},
+		  "extensions": []
+		}
+	  },
+}
