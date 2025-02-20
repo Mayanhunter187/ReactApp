@@ -1,16 +1,16 @@
 services:
   app:
-    image: ghcr.io/mayanhunter187/reactapp:latest
+    build: Client\portfolio
     container_name: front_end
     command: npm start
     ports:
-      - 3000:3000
+      - 80:3000
     develop:
       watch:
         - action: sync+restart
-          path: Client/portfolio
+          path: Client\portfolio
           target: /app
           ignore:
-            - Client/portfolio/node_modules
+            - Client\portfolio\node_modules
         - action: rebuild
-          path: Client/portfolio/package.json
+          path: Client\portfolio\package.json
