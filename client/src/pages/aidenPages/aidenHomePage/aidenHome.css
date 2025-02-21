@@ -1,0 +1,162 @@
+/* Base Styles */
+.portfolio-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #ffffff; /* White text for contrast */
+    background-color: #000000; /* Black background */
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Site Navigation */
+  .site-navigation {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: #111111; /* Dark gray for contrast */
+    border-bottom: 1px solid #333333; /* Subtle border */
+  }
+  
+  .home-link-box {
+    background-color: #28a745; /* Green accent color */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-link-box:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* PFP Section */
+  .aiden-pfp-section {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #111111; /* Dark gray for contrast */
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 5px solid #28a745; /* Green accent color */
+  }
+  
+  .profile-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* White text */
+  }
+  
+  .profile-tagline {
+    font-size: 1.2rem;
+    color: #cccccc; /* Light gray for subtlety */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Content Sections */
+  .portfolio-content section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #111111; /* Dark gray for contrast */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+  }
+  
+  h2 {
+    color: #ffffff; /* White text */
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  /* Projects Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background: #1a1a1a; /* Slightly lighter gray */
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    color: #ffffff; /* White text */
+  }
+  
+  .project-card p {
+    color: #cccccc; /* Light gray for subtlety */
+  }
+  
+  /* Skills List */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .skill-tag {
+    background: #28a745; /* Green accent color */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Contact Section */
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .social-button {
+    background: #28a745; /* Green accent color */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .social-button:hover {
+    background: #218838; /* Darker green on hover */
+  }
+  
+  /* Footer */
+  .portfolio-footer {
+    text-align: center;
+    padding: 2rem;
+    color: #666666; /* Gray text for subtlety */
+    margin-top: 3rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .portfolio-container {
+      padding: 10px;
+    }
+    
+    .profile-header h1 {
+      font-size: 2rem;
+    }
+    
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }

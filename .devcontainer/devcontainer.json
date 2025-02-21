@@ -1,5 +1,5 @@
 {
-	"name": "devcontainerr",
+	"name": "devcontainer",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "react_front_end",
 	"workspaceFolder": "/app"

@@ -4,4 +4,12 @@ services:
     container_name: react_front_end
     command: npm start
     ports:
-      - 3000:3000
+      - 80:3000
+    volumes:
+      - ../client/src:/app/src
+      - ../client/public:/app/public
+      - ../client/package.json:/app/package.json
+      - ../client/package-lock.json:/app/package-lock.json
+      - ../client/.env:/app/.env
+    environment:
+        - CHOKIDAR_USEPOLLING=true
