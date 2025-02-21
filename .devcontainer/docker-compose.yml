@@ -1,10 +1,7 @@
-version: '3.8'
 services:
-  front_end:
-    build: ..\client\portfolio
-    container_name: front_end
+  react_front_end:
+    build: ..\client\
+    container_name: react_front_end
     command: npm start
     ports:
-      - 80:3000
-    volumes:
-      - ..:/workspaces:cached
+      - 3000:3000

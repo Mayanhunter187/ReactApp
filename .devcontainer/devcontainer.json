@@ -1,12 +1,6 @@
 {
-	"name": "devcontainer",
+	"name": "devcontainerr",
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "front_end",
+	"service": "react_front_end",
 	"workspaceFolder": "/app"
-	"customizations": {
-		"vscode": {
-		  "settings": {},
-		  "extensions": []
-		}
-	  },
 }

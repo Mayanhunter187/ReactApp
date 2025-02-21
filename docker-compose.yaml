@@ -1,7 +1,12 @@
 services:
-  app:
-    build: Client\portfolio
-    container_name: front_end
+  react_front_end:
+    build: client\
+    container_name: react_front_end
     command: npm start
     ports:
-      - 80:3000
+      - 3000:3000
+    volumes:
+      - ./client/src:/app/src
+      - ./client/public:/app/public
+    environment:
+        - CHOKIDAR_USEPOLLING=true
